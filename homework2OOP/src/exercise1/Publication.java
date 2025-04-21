@@ -12,7 +12,7 @@ public class Publication {
 	}
 	
 	public String getInfo() {
-		return "Test";
+		return title + " ist im Jahr: "+ year + " erschienen.";
 	}
 	
 	public String getTitle() {
