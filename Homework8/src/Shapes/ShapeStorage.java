@@ -29,7 +29,7 @@ public class ShapeStorage<T extends Shape> extends ArrayList<T> {
 	}
 	
 	public <U extends T> void importLargeShapes(ShapeStorage<U> other, double minArea) {
-		for(Shape shape : other) {
+		for(Shape shape : other) {							//Shape can be replaced with U (or T)
 			if(shape.getArea() >= minArea) {
 				//Shape zu DIESER Liste hinzufügen
 				this.add((T)shape);
